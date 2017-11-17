@@ -7,7 +7,7 @@ library(Rtsne)
 set.seed(42)
 
 (ctx = tercenCtx())  %>% 
-  select(.cindex, .rindex, .values) %>% 
+  select(.cindex, .rindex, .y) %>% 
   reshape2::acast(.cindex ~ .rindex, value.var='.y', fun.aggregate=mean) %>%
   Rtsne::Rtsne(dims = as.integer(ctx$op.value('dims')),
                initial_dims = as.integer(ctx$op.value('initial_dims')),

@@ -1,4 +1,4 @@
-# Principal Components Analysis
+# TSNE
 
 ```
 https://github.com/tercen/tsne_operator.git
