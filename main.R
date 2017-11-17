@@ -2,13 +2,13 @@ library(tercen)
 library(dplyr)
 library(reshape2)
 library(Rtsne)
-
+  
 # Sets seed for reproducibility
 set.seed(42)
 
 (ctx = tercenCtx())  %>% 
-  select(.cindex, .rindex, .y) %>% 
-  reshape2::acast(.cindex ~ .rindex, value.var='.y', fun.aggregate=mean) %>%
+  select(.ci, .ri, .y) %>% 
+  reshape2::acast(.ci ~ .ri, value.var='.y', fun.aggregate=mean) %>%
   Rtsne::Rtsne(dims = as.integer(ctx$op.value('dims')),
                initial_dims = as.integer(ctx$op.value('initial_dims')),
                perplexity = as.integer(ctx$op.value('perplexity')),
@@ -30,6 +30,7 @@ set.seed(42)
     names(d)=paste('tsne', seq_along(d), sep = '.')
     return(d)
   }) %>% 
-  mutate(.cindex = seq_len(nrow(.))-1) %>%
+  mutate(.ci = seq_len(nrow(.))-1) %>%
   ctx$addNamespace() %>%
   ctx$save()
+
