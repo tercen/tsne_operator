@@ -143,13 +143,13 @@ Requires: magrittr, stringi
 
 Package: tercen
 Source: github
-Version: 0.4.7
-Hash: 78269592d2e2596b8feeac04c7ecea07
+Version: 0.4.9
+Hash: efcb28d52d5491170d0141308fc161f3
 Requires: R6, dplyr, httr, jsonlite, rtson, tibble, yaml
 GithubRepo: teRcen
 GithubUsername: tercen
-GithubRef: 0.4.7
-GithubSha1: d53020e7a3330987337fdb774ebac200861aefa2
+GithubRef: 0.4.9
+GithubSha1: 5a908e7757fdff17a75ad7f6bc8a5e8127114dba
 
 Package: tibble
 Source: CRAN

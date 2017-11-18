@@ -18,6 +18,8 @@ remove.packages("rtson", lib = "./packrat/lib/x86_64-pc-linux-gnu/3.3.2")
 packrat::init(options = list(
   use.cache = TRUE
   ))
+  
+git add -A && git commit -m "upgrade" && git tag -a 0.0.5 -m "++" && git push && git push --tags
 ```
 
 ```R
