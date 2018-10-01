@@ -37,6 +37,6 @@ The operator performs tSNE analysis. It reduces the amount of variables (i.e. in
 #### Reference
 
 ##### See Also
-
+[pca](https://github.com/tercen/pca_operator)
 
 #### Examples
