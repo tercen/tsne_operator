@@ -3,11 +3,22 @@ library(dplyr)
 library(reshape2)
 library(Rtsne)
 
+#####
+options("tercen.workflowId" = "fa57a23ec257703e8ea0537141056015")
+options("tercen.stepId"     = "c265dc7a-8c7f-41cd-a1bc-63038e814d4b")
+
+getOption("tercen.workflowId")
+getOption("tercen.stepId")
+
+#####
+
 # Sets seed for reproducibility
 set.seed(42)
 
 ctx <- tercenCtx()
-ctx  %>% 
+
+ ctx %>% 
+   select()
   select(.ci, .ri, .y) %>% 
   reshape2::acast(.ci ~ .ri, value.var='.y', fun.aggregate=mean) %>%
   Rtsne::Rtsne(dims = as.integer(ctx$op.value('dims')),
