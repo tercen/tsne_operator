@@ -1,7 +1,7 @@
 # tsne operator
 
 #### Description
-`tsne` operator performs the t-distributed stochastic neighbor embedding algorithm. It aims to reduce data dimension for visualization.
+`tsne` t-Distributed Stochastic Neighbor Embedding: is a method for constructing a low dimensional embedding of high-dimensional data.
 
 ##### Usage
 Input projection|.
