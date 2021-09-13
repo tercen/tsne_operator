@@ -1,9 +1,9 @@
 {
   "kind": "OperatorUnitTest",
-  "name": "test1",
+  "name": "tsne",
   "namespace": "test",
   "inputDataUri": "crabs-long.csv",
-  "outputDataUri": ["result.csv"],
+  "outputDataUri": ["tsne_workflow-Export 1.csv"],
   "columns": ["observation"],
   "rows": ["variable"],
   "colors": [],
