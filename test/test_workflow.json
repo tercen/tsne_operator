@@ -2,12 +2,12 @@
   "kind": "OperatorUnitTest",
   "name": "tsne",
   "namespace": "test",
-  "inputDataUri": "crabs-long.csv",
-  "outputDataUri": ["tsne_workflow-Export 1.csv"],
-  "columns": ["observation"],
-  "rows": ["variable"],
+  "inputDataUri": "input_tsne.csv",
+  "outputDataUri": ["outpu_tsne.csv"],
+  "columns": ["event_id"],
+  "rows": ["channel"],
   "colors": [],
   "labels": [],
-  "yAxis": "measurement",
+  "yAxis": "ds0.asinh",
   "xAxis": ""
 }
