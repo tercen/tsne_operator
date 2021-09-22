@@ -12,13 +12,14 @@ getOption("tercen.stepId")
 
 #####
 
-# Sets seed for reproducibility
-set.seed(42)
-
 ctx <- tercenCtx()
 
+seed <- NULL
+if(!is.null(ctx$op.value('seed')) && !ctx$op.value('seed') == "NULL") seed <- as.integer(ctx$op.value('seed'))
+
+set.seed(seed)
+
  ctx %>% 
-   select()
   select(.ci, .ri, .y) %>% 
   reshape2::acast(.ci ~ .ri, value.var='.y', fun.aggregate=mean) %>%
   Rtsne::Rtsne(dims = as.integer(ctx$op.value('dims')),

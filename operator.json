@@ -88,6 +88,12 @@
     "name": "exaggeration_factor",
     "defaultValue": 12,
     "description": "Exaggeration factor used to multiply the P matrix in the first part of the optimization"
+  },
+    {
+    "kind": "StringProperty",
+    "name": "seed",
+    "defaultValue": "NULL",
+    "description": "Random seed"
   }
 ]
 }

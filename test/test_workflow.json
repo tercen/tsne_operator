@@ -3,7 +3,7 @@
   "name": "tsne",
   "namespace": "ds10",
   "inputDataUri": "input_tsne.csv",
-  "outputDataUri": ["outpu_tsne.csv"],
+  "outputDataUri": ["output_tsne.csv"],
   "columns": ["event_id"],
   "rows": ["channel"],
   "colors": [],
