@@ -1,7 +1,7 @@
 {
   "kind": "OperatorUnitTest",
   "name": "tsne",
-  "namespace": "test",
+  "namespace": "ds10",
   "inputDataUri": "input_tsne.csv",
   "outputDataUri": ["outpu_tsne.csv"],
   "columns": ["event_id"],
