@@ -1,0 +1,25 @@
+{
+  "kind": "OperatorUnitTest",
+  "name": "tsne",
+  "namespace": "ds10",
+  "propertyValues": [
+    {
+    "kind": "DoubleProperty",
+    "name": "perplexity",
+    "defaultValue": 1,
+    },
+    {
+    "kind": "DoubleProperty",
+    "name": "seed",
+    "value": 42
+  }
+  ],
+  "inputDataUri": "simple_exp.tsv",
+  "outputDataUri": ["simple_output.csv"],
+  "columns": ["Observation"],
+  "rows": ["Varianble"],
+  "colors": [],
+  "labels": [],
+  "yAxis": "Mesurement",
+  "xAxis": ""
+}
