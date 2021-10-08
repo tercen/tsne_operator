@@ -4,14 +4,14 @@
   "namespace": "ds1",
   "propertyValues": [
     {
-    "kind": "DoubleProperty",
+    "kind": "PropertyValue",
     "name": "perplexity",
-    "value": 1
+    "value": "1"
     },
     {
-    "kind": "DoubleProperty",
+    "kind": "PropertyValue",
     "name": "seed",
-    "value": 42
+    "value": "42"
   }
   ],
   "inputFileUris": ["simple_exp.tsv"],
