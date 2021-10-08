@@ -6,7 +6,7 @@
     {
     "kind": "DoubleProperty",
     "name": "perplexity",
-    "defaultValue": 1,
+    "defaultValue": 1
     },
     {
     "kind": "DoubleProperty",
