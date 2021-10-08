@@ -9,7 +9,7 @@
     "defaultValue": 1
     },
     {
-    "kind": "DoubleProperty",
+    "kind": "StringProperty",
     "name": "seed",
     "value": 42
   }
