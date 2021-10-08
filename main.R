@@ -6,7 +6,7 @@ library(Rtsne)
 ctx <- tercenCtx()
 
 seed <- NULL
-if(!is.null(ctx$op.value('seed')) && !ctx$op.value('seed') == "NULL") seed <- as.integer(ctx$op.value('seed'))
+if(!ctx$op.value('seed') < 0) seed <- as.integer(ctx$op.value('seed'))
 
 set.seed(seed)
 

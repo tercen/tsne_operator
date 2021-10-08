@@ -90,10 +90,10 @@
     "description": "Exaggeration factor used to multiply the P matrix in the first part of the optimization"
   },
     {
-    "kind": "StringProperty",
+    "kind": "DoubleProperty",
     "name": "seed",
-    "defaultValue": "NULL",
-    "description": "Random seed"
+    "defaultValue": -1,
+    "description": "Set the seed number. if less than 0, set a Random seed"
   }
 ]
 }
