@@ -4,12 +4,12 @@
   "namespace": "ds1",
   "propertyValues": [
     {
-    "kind": "PropertyValue",
+    "kind": "DoubleProperty",
     "name": "perplexity",
     "value": 1
     },
     {
-    "kind": "PropertyValue",
+    "kind": "DoubleProperty",
     "name": "seed",
     "value": 42
   }
