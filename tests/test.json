@@ -1,7 +1,7 @@
 {
   "kind": "OperatorUnitTest",
   "name": "tsne",
-  "namespace": "ds10",
+  "namespace": "ds1",
   "propertyValues": [
     {
     "kind": "DoubleProperty",
@@ -14,8 +14,9 @@
     "value": 42
   }
   ],
-  "inputDataUri": "simple_exp.tsv",
-  "outputDataUri": ["simple_output.csv"],
+  "inputFileUris": ["simple_exp.tsv"],
+  "inputDataUri": "input.csv",
+  "outputDataUri": ["simple_output.csv", "table2.csv"],
   "columns": ["Observation"],
   "rows": ["Varianble"],
   "colors": [],
