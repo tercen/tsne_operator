@@ -14,7 +14,6 @@
     "value": "42"
   }
   ],
-  "inputFileUris": ["simple_exp.tsv"],
   "inputDataUri": "simple_exp.tsv",
   "outputDataUri": ["simple_output.csv"],
   "columns": ["Observation"],
