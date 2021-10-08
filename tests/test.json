@@ -15,8 +15,8 @@
   }
   ],
   "inputFileUris": ["simple_exp.tsv"],
-  "inputDataUri": "input.csv",
-  "outputDataUri": ["simple_output.csv", "table2.csv"],
+  "inputDataUri": "simple_exp.tsv",
+  "outputDataUri": ["simple_output.csv"],
   "columns": ["Observation"],
   "rows": ["Varianble"],
   "colors": [],
