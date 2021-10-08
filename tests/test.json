@@ -18,7 +18,7 @@
   "inputDataUri": "simple_exp.tsv",
   "outputDataUri": ["simple_output.csv"],
   "columns": ["Observation"],
-  "rows": ["Varianble"],
+  "rows": ["Variable"],
   "colors": [],
   "labels": [],
   "yAxis": "Mesurement",
