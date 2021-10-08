@@ -6,10 +6,10 @@
     {
     "kind": "DoubleProperty",
     "name": "perplexity",
-    "defaultValue": 1
+    "value": 1
     },
     {
-    "kind": "StringProperty",
+    "kind": "DoubleProperty",
     "name": "seed",
     "value": 42
   }
