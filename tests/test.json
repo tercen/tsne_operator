@@ -15,7 +15,7 @@
   }
   ],
   "inputDataUri": "simple_exp.tsv",
-  "outputDataUri": ["simple_output.csv"],
+  "outputDataUri": ["table1.csv","table2.csv"],
   "columns": ["Observation"],
   "rows": ["Variable"],
   "colors": [],
