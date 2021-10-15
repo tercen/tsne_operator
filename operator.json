@@ -93,7 +93,7 @@
     "kind": "DoubleProperty",
     "name": "seed",
     "defaultValue": -1,
-    "description": "Set the seed number. if less than 0, set a Random seed"
+    "description": "Seed for random number generation. if less than 0, set a Random seed"
   }
 ]
 }
