@@ -1,7 +1,7 @@
 {
   "name": "t-SNE",
   "description": "t-Distributed Stochastic Neighbor Embedding: is a method for constructing a low dimensional embedding of high-dimensional data.",
-  "tags": ["multivariate statistics","flow cytometry"],
+  "tags": ["multivariate statistics","flow cytometry","dimensionality reduction"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/tsne_operator"],
   "properties": [
