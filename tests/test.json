@@ -1,7 +1,7 @@
 {
   "kind": "OperatorUnitTest",
   "name": "tsne",
-  "namespace": "ds1",
+  "namespace": "test",
   "propertyValues": [
     {
     "kind": "PropertyValue",
