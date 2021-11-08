@@ -34,7 +34,7 @@ ctx  %>%
     names(d)=paste('tsne', seq_along(d), sep = '.')
     return(d)
   }) %>% 
-  mutate(.ci = seq_len(nrow(.))-1) %>%
+  mutate(.ci = seq_len(nrow(.))-1L) %>%
   ctx$addNamespace() %>%
   ctx$save()
 

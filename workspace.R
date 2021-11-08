@@ -15,7 +15,7 @@ getOption("tercen.stepId")
 ctx <- tercenCtx()
 
 seed <- NULL
-if(!is.null(ctx$op.value('seed')) && !ctx$op.value('seed') == "NULL") seed <- as.integer(ctx$op.value('seed'))
+if(!ctx$op.value('seed') < 0) seed <- as.integer(ctx$op.value('seed'))
 
 set.seed(seed)
 
@@ -43,7 +43,7 @@ set.seed(seed)
     names(d)=paste('tsne', seq_along(d), sep = '.')
     return(d)
   }) %>% 
-  mutate(.ci = seq_len(nrow(.))-1) %>%
+  mutate(.ci = seq_len(nrow(.))-1L) %>%
   ctx$addNamespace() %>%
   ctx$save()
 
