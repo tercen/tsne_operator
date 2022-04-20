@@ -1,9 +1,11 @@
-# tsne operator
+# t-SNE operator
 
-#### Description
+##### Description
+
 `tsne` t-Distributed Stochastic Neighbor Embedding: is a method for constructing a low dimensional embedding of high-dimensional data.
 
 ##### Usage
+
 Input projection|.
 ---|---
 `row`   | represents the variables (e.g. genes, channels, markers)
@@ -21,8 +23,8 @@ Input parameters|.
 `max_iter`| numeric, number of iteration, default 1000
 `pca_center`| logical, should data be centered before pca is applied ?
 `pca_scale`| logical, should data be scaled before pca is applied ?
-`stop_lying_iter`| numeric, Iteration after which the perplexities are no longer exaggerated
-`mom_switch_iter`| numeric, Iteration after which the final momentum is used
+`stop_lying_iter`| numeric, iteration after which the perplexities are no longer exaggerated
+`mom_switch_iter`| numeric, iteration after which the final momentum is used
 
 
 Output relations|.
@@ -31,12 +33,9 @@ Output relations|.
 
 
 ##### Details
-The operator performs tSNE analysis. It reduces the amount of variables (i.e. indicated by rows) to a lower number (default 2).
 
-
-#### Reference
+The operator is a wrapper of the `Rtsne()` function from the `Rtsne` R package.
 
 ##### See Also
-[pca](https://github.com/tercen/pca_operator)
 
-#### Examples
+[pca operator](https://github.com/tercen/pca_operator), [atsne operator](https://github.com/tercen/atsne_operator), [umap operator](https://github.com/tercen/umap_operator)
