@@ -1,6 +1,6 @@
 {
   "name": "t-SNE",
-  "description": "t-Distributed Stochastic Neighbor Embedding: is a method for constructing a low dimensional embedding of high-dimensional data.",
+  "description": "Runs t-Distributed Stochastic Neighbor Embedding, a method for dimensionality reduction.",
   "tags": [
     "multivariate statistics",
     "flow cytometry",
