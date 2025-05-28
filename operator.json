@@ -104,5 +104,54 @@
       "defaultValue": -1,
       "description": "Seed for random number generation. if less than 0, set a Random seed"
     }
+  ],
+  "operatorSpec": {
+    "kind": "OperatorSpec",
+    "ontologyUri": "https://tercen.com/_ontology/tercen",
+    "ontologyVersion": "0.0.1",
+    "inputSpecs": [
+      {
+          "kind": "CrosstabSpec",
+          "metaFactors": [
+              {
+                  "kind": "MetaFactor",
+                  "name": "Variable",
+                  "type": "",
+                  "description": "Variable identifiers (channel, marker name or ID, ...)",
+                  "ontologyMapping": "variable",
+                  "crosstabMapping": "row",
+                  "cardinality": "1..n",
+                  "factors": []
+              },
+              {
+                  "kind": "MetaFactor",
+                  "name": "Observation identifier",
+                  "type": "",
+                  "description": "An identifier for the observations (event ID, ...)",
+                  "ontologyMapping": "observation",
+                  "crosstabMapping": "column",
+                  "cardinality": "1..n",
+                  "factors": []
+              }
+          ],
+          "axis": [
+              {
+                  "kind": "AxisSpec",
+                  "metaFactors": [
+                      {
+                          "kind": "MetaFactor",
+                          "name": "Measurement",
+                          "type": "numeric",
+                          "description": "Measurement values (intensity, ...).",
+                          "ontologyMapping": "measurement",
+                          "crosstabMapping": "y",
+                          "cardinality": "1",
+                          "factors": []
+                      }
+                  ]
+              }
+          ]
+      }
   ]
+  }
 }
